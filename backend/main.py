@@ -19,6 +19,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+print("CORS configured for: https://lockthedate-skyeinvite.onrender.com")
 
 # Serve React build as static files
 app.mount("/static", StaticFiles(directory="build/static"), name="static")
